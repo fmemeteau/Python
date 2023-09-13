@@ -1,0 +1,2 @@
+Chaque Day_X_1, Day_X_2 est un sous_exercice des différentes lessons, censé travailler un point précis du cours.
+En revanche, les Day_X_0 sont les points culminants de chaque cours, derniers exercices avant un nouvel apprentissage.
