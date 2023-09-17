@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-17T18:27:05.496Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0" etag="FDCB8-elCURuT1NlI_8P" version="21.7.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-17T18:27:18.493Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0" etag="p-iNeLuFvkrXl0xMRnfg" version="21.7.5" type="github">
   <diagram name="Page-1" id="F1S7DHb2UXTDWaBEKvWv">
     <mxGraphModel dx="852" dy="647" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -38,7 +38,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="7ijS1GuDmhyYXWOvBWj3-8" value="is the guessed letter in the word ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="7ijS1GuDmhyYXWOvBWj3-8" value="Is the guessed letter in the word ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="365" y="420" width="105" height="100" as="geometry" />
         </mxCell>
         <mxCell id="7ijS1GuDmhyYXWOvBWj3-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7ijS1GuDmhyYXWOvBWj3-10" target="7ijS1GuDmhyYXWOvBWj3-23">
