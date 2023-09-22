@@ -36,13 +36,6 @@ for char in chosen_word:
     #         display[position] = letter
 
 
-'''for char in chosen_word:
-    if guess == char:
-        print("Right")
-    else:
-        print("Wrong")'''
-
-
 # Print "display" and you should see the guessed letter in the correct position and every other letter replace with "_"
 # Getting the user to guess the next letter will be tackled in Step 3
 print(display)
