@@ -20,26 +20,26 @@ shift = int(input("Type the shift number:\n"))
 
 # --- My answer, which doesn't work ---
 # Create a function called 'encrypt' that takes the 'text' and 'shift' as inputs.
-'''def encrypt(text, shift):
-    # Inside the 'encrypt' function, shift each letter of the 'text' forward in the alphabet by the 
-    # shift amount and print the encrypted text.
-    for char in text:
-        code = []
-        x = 0
-        index = 0
-        while char != alphabet[x - 1]:
-            print(x)
-            print(char)
-            print(alphabet[x])
-            x += 1
-            print(f"Index is {index}")
-        code[index] = alphabet[(x - 1) + shift]
-        index += 1
-    print(f"The code is {code}")
+# def encrypt(text, shift):
+#     # Inside the 'encrypt' function, shift each letter of the 'text' forward in the alphabet by the 
+#     # shift amount and print the encrypted text.
+#     for char in text:
+#         code = []
+#         x = 0
+#         index = 0
+#         while char != alphabet[x]:
+#             # print(x)
+#             # print(char)
+#             # print(alphabet[x])
+#             x += 1
+#             print(f"Index is {index}")
+#         code.append(alphabet[x + shift])
+#         index += 1
+#     print(f"The code is {code}")
         
     
 # Call the encrypt function and pass in the user inputs. You should be able to test the code.
-encrypt(text, shift)'''
+encrypt(text, shift)
 
 
 # --- Teacher's answer ---
