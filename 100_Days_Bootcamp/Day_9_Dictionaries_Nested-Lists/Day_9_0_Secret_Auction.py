@@ -1,34 +1,66 @@
-# A dictionary, be it in Python or from real life, can be seen as a table, where the left part (a word in a dictionary)
-# is a 'key' and the right part (the definition) is the 'value'
+# Create a secret auction bid program using a dictionary. The name of the bidder shall be the key and the bid the value.
 
-# The syntax to create a dictionary in Python is 'dictionary = {Key: Value}'
-# Copying the example from the course would be :
-# {"Bug": "An error in a program that prevents the program from running as expected."}
+# --- My answer ---
+import os
 
-# Each Key / Value pair is separated by a comma :
-# {"Bug": "Something",
-# "Function": "A piece of code that you can easily call over and over again." 
-# }
+def clear():
+    os.system('cls' if os.name=='nt' else 'clear')
 
-# Retrieving an item from a dictionary :
-# print(dictionary["Bug"])
+from Day_9_0_Secret_Auction_Art import gavel
+end_of_auction = False
 
-# Adding a new item :
-# dictionary["Loop"] = "The action of doing something over and over again."
+print(gavel)
 
-# Create an empty dictionary :
-# dictionary  = {}
+bid_list = {}
 
-# Wipe an entire dictionary :
-# existing_dictionary = {}
+while end_of_auction == False:
+    name = input("Please insert Bidder name: ")
+    bid = input("Please insert Bid: ")
+    bid = int(bid)
+    bid_list[name] = bid
 
-# Edit an item in a dictionary, simply write a new value :
-# dictionary["Bug"] = "A moth in your computer"
+    other_bidder = input("Is there another bidder? Type 'yes' or 'no': ")
+    clear()
+    if other_bidder == 'no':
+        end_of_auction = True
 
-# Loop through a dictionary :
-# For key in dictionary:
-#   print(key)
-# would simply display the name of the keys.
-# To display the values as well, do :
-# For key in dictionary:
-#   print(dictionary[key]) 
+
+
+winner = max(bid_list, key=bid_list.get)
+print(f"The winner is {winner} with a ${bid_list[winner]} bid.")
+
+
+
+
+# --- Teacher's answer ---
+# I added my own import of the 'os' module as well as the clear() function
+
+import os
+def clear():
+    os.system('cls' if os.name=='nt' else 'clear')
+
+from Day_9_0_Secret_Auction_Art import gavel
+print(gavel)
+
+bids = {}
+bidding_finished = False
+
+def find_highest_bidder(bidding_record):
+    highest_bid = 0
+    for bidder in bidding_record:
+        bid_amount = bidding_record[bidder]
+        if bid_amount > highest_bid:
+            highest_bid = bid_amount
+            winner = bidder
+    print(f"The winner is {winner} with a bid of ${highest_bid}.")
+
+while not bidding_finished:
+    name = input("What is your name?: ")
+    price = int(input("What is your bid?: $"))
+    bids[name] = price
+    should_continue = input("Are there any other bidders? Type 'yes' or 'no'.")
+    if should_continue == 'no':
+        bidding_finished = True
+        find_highest_bidder(bids)
+    elif should_continue == 'yes':
+        clear()
